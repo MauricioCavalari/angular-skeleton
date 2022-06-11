@@ -1,0 +1,23 @@
+@import "typography";
+
+$primary: #333b8f;
+
+@mixin primary-button {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 16px;
+  background-color: $primary;
+  border: 0px;
+  width: 100%;
+  color: white;
+  @include font-bold;
+  line-height: 24px;
+}
+
+@mixin page {
+  :host {
+    flex-grow: 1;
+    flex-basis: auto;
+    display: block;
+  }
+}

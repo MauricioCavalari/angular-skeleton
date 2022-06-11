@@ -1,0 +1,19 @@
+@mixin font-regular {
+  font-family: montserratregular !important;
+  font-weight: 400 !important;
+}
+
+@mixin font-medium {
+  font-family: montserratmedium !important;
+  font-weight: 500 !important;
+}
+
+@mixin font-semi-bold {
+  font-family: montserratsemibold !important;
+  font-weight: 600 !important;
+}
+
+@mixin font-bold {
+  font-family: montserratbold !important;
+  font-weight: 700 !important;
+}

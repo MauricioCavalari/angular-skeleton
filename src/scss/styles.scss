@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'shared';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  @include font-regular;
+  line-height: 1.2;
+  color :#47484c;
+}

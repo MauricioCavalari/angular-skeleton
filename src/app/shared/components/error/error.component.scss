@@ -1,0 +1,42 @@
+@import "src/scss/shared";
+
+:host {
+  display: flex;
+  flex-direction: column;
+
+  .error-header {
+    display: block;
+    position: relative;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: white;
+    padding: 0 24px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: $primary;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      left: 0;
+    }
+
+    .error-top {
+      display: flex;
+      padding: 15px 0;
+      line-height: 24px;
+      padding-bottom: 15px;
+
+      > h4 {
+        line-height: 32px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 22px;
+      }
+    }
+
+  }
+}

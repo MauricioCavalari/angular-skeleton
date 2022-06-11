@@ -1,0 +1,10 @@
+<p>
+  <span class="label">{{ title }}</span>
+  <span class="value">{{
+    monetary || monetary === undefined
+      ? monetary
+        ? (value | currency: "BRL":"R$ ")
+        : value
+      : "------"
+  }}</span>
+</p>

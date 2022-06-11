@@ -1,0 +1,43 @@
+@import "src/scss/shared";
+
+:host {
+  display: block;
+
+  &:first-of-type {
+    border-top: 0 !important;
+  }
+
+  &:first-of-type {
+    border-top: 0 !important;
+  }
+
+  p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #47484c;
+    font-size: 13px;
+    @include font-medium;
+    margin-bottom: -4px;
+    line-height: 19px;
+    text-align: start;
+
+    .value {
+      color: #000000;
+      @include font-semi-bold;
+      white-space: nowrap;
+      text-align: right;
+      flex-basis: 88px;
+      flex-shrink: 0;
+    }
+
+    &.total {
+      color: #000;
+      font-size: 14px;
+      line-height: 17px;
+      @include font-semi-bold;
+      margin-top: 16px;
+    }
+  }
+}

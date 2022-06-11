@@ -1,0 +1,12 @@
+<ng-container *ngIf="drawer$ | async as drawer">
+  <div
+    class="drawer bottom"
+    [@opened]="drawer.open ? 'opened' : 'closed'"
+    [ngClass]="{ opened: drawer.open }"
+  >
+    <div class="content" *ngIf="drawer.open">
+      <ng-content select="[content]"></ng-content>
+    </div>
+  </div>
+  <div class="backdrop fade in" *ngIf="drawer.open"></div>
+</ng-container>

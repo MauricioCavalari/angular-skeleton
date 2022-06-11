@@ -1,0 +1,27 @@
+<input type="checkbox" [(ngModel)]="check1">
+<input type="checkbox" [(ngModel)]="check2">
+
+
+<float-button (click)="openModal()">
+    <span>Show Drawer</span>
+</float-button>
+
+
+<info-line
+  [title]="'Nome:'"
+  [value]="'Mauricio Cavalari'"
+></info-line>
+
+
+<drawer>
+  <ng-container content>
+    <h1>Hello my drawer</h1>
+    <p>{{ paragrafo.paragraph }}</p>
+    <button
+      (click)="closeModal()"
+      [disabled]="!(check1 && check2)"
+    >
+     Close modal
+   </button>
+  </ng-container>
+</drawer>

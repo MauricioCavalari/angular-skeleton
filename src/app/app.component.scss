@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex-grow: 1;
+
+    > router-outlet ::ng-deep {
+      display: none;
+
+      + :first-of-type {
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        flex-grow: 1;
+        //padding: 24px;
+      }
+    }
+  }
+}
